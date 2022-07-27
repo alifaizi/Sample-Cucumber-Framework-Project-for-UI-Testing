@@ -1,0 +1,169 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-27T15:13:51.565Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3536000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step.definition.Initializer.beforeHooks(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Register with Tekschool Test Environment Website",
+        "description": "",
+        "id": "new-user-registeration;register-with-tekschool-test-environment-website",
+        "after": [
+          {
+            "result": {
+              "duration": 642000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step.definition.Initializer.afterHooks(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on Test Environment Home Page",
+            "match": {
+              "location": "step.definition.NewUserRegistrationStepDefinition.i_am_on_test_environment_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 68000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on My Account button",
+            "match": {
+              "location": "step.definition.NewUserRegistrationStepDefinition.i_click_on_my_account_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 727000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on register link",
+            "match": {
+              "location": "step.definition.NewUserRegistrationStepDefinition.i_click_on_register_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 434000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I fill the registration form",
+            "match": {
+              "location": "step.definition.NewUserRegistrationStepDefinition.i_fill_the_registration_form(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "lastname",
+                  "email",
+                  "telephone",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "Ali",
+                  "Faizi",
+                  "eng.alifaizi@tekschool.com",
+                  "9876543210",
+                  "xyz2022",
+                  "xyz2022"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I subscribe to newsletter",
+            "match": {
+              "location": "step.definition.NewUserRegistrationStepDefinition.i_subscribe_to_newsletter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I agree to privacy policy",
+            "match": {
+              "location": "step.definition.NewUserRegistrationStepDefinition.i_agree_to_privacy_policy()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 466000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on continue button",
+            "match": {
+              "location": "step.definition.NewUserRegistrationStepDefinition.i_click_on_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I validate my account is created successfully",
+            "match": {
+              "location": "step.definition.NewUserRegistrationStepDefinition.i_validate_my_account_is_created_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegisteringNewAccount"
+          }
+        ]
+      }
+    ],
+    "name": "New User Registeration",
+    "description": "",
+    "id": "new-user-registeration",
+    "keyword": "Feature",
+    "uri": "classpath:features/NewUserRegistration.feature",
+    "tags": []
+  }
+]
