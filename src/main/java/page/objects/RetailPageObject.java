@@ -26,59 +26,6 @@ public class RetailPageObject extends Base {
 	private WebElement loginButton;
 	@FindBy (xpath = "//div[@id='content']//h2[text()='My Account']")
 	private WebElement myAccuntDashboard;
-	// Scenario 1 Register as an Affiliate user with Cheque Payment Method
-	@FindBy(xpath = "//a[text()='Register for an affiliate account']")
-	private WebElement regForAffiliateAccount;
-	@FindBy(xpath = "//input[@id='input-company']")
-	private WebElement companyField;
-	@FindBy(xpath = "//input[@id='input-website']")
-	private WebElement websiteField;
-	@FindBy(xpath = "//input[@id='input-tax']")
-	private WebElement taxIdField;
-	@FindBy(xpath = "//input[@value = 'cheque']")
-	private WebElement chequeRadioButton;
-	@FindBy(xpath = "//input[@id= 'input-cheque']")
-	private WebElement chequePayeeName;
-	@FindBy(xpath = "//input[@type='checkbox']")
-	private WebElement aboutUsCheckBox;
-	@FindBy(xpath = "//input[@class='btn btn-primary']")
-	private WebElement continueButton;
-	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
-	private WebElement successMessage;
-	// Scenario 2 Edit your affiliate information from Cheque payment method to Bank Transfer
-	@FindBy(xpath = "//li//a[text()='Edit your affiliate information']")
-	private WebElement editAffiliatedInformationLink;
-	@FindBy(xpath = "//input[@value='bank']")
-	private WebElement bankRadioButton;
-	@FindBy(xpath = "//input[@id='input-bank-name']")
-	private WebElement bankNameFiled;
-	@FindBy(xpath = "//input[@id='input-bank-branch-number']")
-	private WebElement branchNumber;
-	@FindBy(xpath = "//input[@id='input-bank-swift-code']")
-	private WebElement swiftDoceField;
-	@FindBy(xpath = "//input[@id='input-bank-account-name']")
-	private WebElement nameOfAccount;
-	@FindBy(xpath = "//input[@id='input-bank-account-number']")
-	private WebElement accNumber;
-	@FindBy(xpath = "//input[@value='Continue']")
-	private WebElement continueBttnOnAccountEdit;
-	@FindBy(xpath = "(//div[@class='alert alert-success alert-dismissible'])[1]")
-	private WebElement successMessageOnEditAccount;
-////Scenario 3: Edit your account Information
-	@FindBy(xpath = "//a[text()='Edit your account information']")
-	private WebElement editYourAccountInfo;
-	@FindBy(xpath = "//input[@id='input-firstname']")
-	private WebElement firstNameFiled;
-	@FindBy(xpath = "//input[@id='input-lastname']")
-	private WebElement lastNameField;
-	@FindBy(xpath = "//input[@id='input-email']")
-	private WebElement accountEmailField;
-	@FindBy(xpath = "//input[@id='input-telephone']")
-	private WebElement accounttelephoneField;
-	@FindBy(xpath = "//input[@value='Continue']")
-	private WebElement continueBttnOnEditAccountInfo;
-	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
-	private WebElement successMessageOnEditAccountInfo;
 
 	public String getToRetailPage() {
 		String tetEnvironmentTextOnUI = retailPage.getText();
@@ -105,7 +52,25 @@ public class RetailPageObject extends Base {
 		return myAccountTextOnLoggedinPage;
 	}
 	
-// Scenario 1
+	// Scenario 1 Register as an Affiliate user with Cheque Payment Method
+	@FindBy(xpath = "//a[text()='Register for an affiliate account']")
+	private WebElement regForAffiliateAccount;
+	@FindBy(xpath = "//input[@id='input-company']")
+	private WebElement companyField;
+	@FindBy(xpath = "//input[@id='input-website']")
+	private WebElement websiteField;
+	@FindBy(xpath = "//input[@id='input-tax']")
+	private WebElement taxIdField;
+	@FindBy(xpath = "//input[@value = 'cheque']")
+	private WebElement chequeRadioButton;
+	@FindBy(xpath = "//input[@id= 'input-cheque']")
+	private WebElement chequePayeeName;
+	@FindBy(xpath = "//input[@type='checkbox']")
+	private WebElement aboutUsCheckBox;
+	@FindBy(xpath = "//input[@class='btn btn-primary']")
+	private WebElement continueButton;
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	private WebElement successMessage;
 	public void clickOnRegForAffiliateAccountText() {
 		regForAffiliateAccount.click();
 	}
@@ -138,6 +103,24 @@ public class RetailPageObject extends Base {
 	}
 	
 	// Scenario 2 Edit your affiliate information from Cheque payment method to Bank Transfer
+	@FindBy(xpath = "//li//a[text()='Edit your affiliate information']")
+	private WebElement editAffiliatedInformationLink;
+	@FindBy(xpath = "//input[@value='bank']")
+	private WebElement bankRadioButton;
+	@FindBy(xpath = "//input[@id='input-bank-name']")
+	private WebElement bankNameFiled;
+	@FindBy(xpath = "//input[@id='input-bank-branch-number']")
+	private WebElement branchNumber;
+	@FindBy(xpath = "//input[@id='input-bank-swift-code']")
+	private WebElement swiftDoceField;
+	@FindBy(xpath = "//input[@id='input-bank-account-name']")
+	private WebElement nameOfAccount;
+	@FindBy(xpath = "//input[@id='input-bank-account-number']")
+	private WebElement accNumber;
+	@FindBy(xpath = "//input[@value='Continue']")
+	private WebElement continueBttnOnAccountEdit;
+	@FindBy(xpath = "(//div[@class='alert alert-success alert-dismissible'])[1]")
+	private WebElement successMessageOnEditAccount;
 	
 	public void clickOnEditAffiliatedInformationLink() {
 		editAffiliatedInformationLink.click();
@@ -170,7 +153,21 @@ public class RetailPageObject extends Base {
 		return successMessageDisplayOnEditAccount;
 	}
 	
-	// Scenario 3 Edit your account Information 
+////Scenario 3: Edit your account Information
+	@FindBy(xpath = "//a[text()='Edit your account information']")
+	private WebElement editYourAccountInfo;
+	@FindBy(xpath = "//input[@id='input-firstname']")
+	private WebElement firstNameFiled;
+	@FindBy(xpath = "//input[@id='input-lastname']")
+	private WebElement lastNameField;
+	@FindBy(xpath = "//input[@id='input-email']")
+	private WebElement accountEmailField;
+	@FindBy(xpath = "//input[@id='input-telephone']")
+	private WebElement accounttelephoneField;
+	@FindBy(xpath = "//input[@value='Continue']")
+	private WebElement continueBttnOnEditAccountInfo;
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	private WebElement successMessageOnEditAccountInfo;
 	
 	public void clickOnEditYourAccountInfo() {
 		editYourAccountInfo.click();

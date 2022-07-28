@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import core.Base;
 
 public class NewUserRegistrationPageObj extends Base{
-	
+	// This is just to create new account to be used to run in each time we run the Capstone project
 	public NewUserRegistrationPageObj(){
 		PageFactory.initElements(driver, this);
 	}

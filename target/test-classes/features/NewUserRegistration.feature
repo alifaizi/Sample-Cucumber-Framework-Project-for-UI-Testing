@@ -1,5 +1,5 @@
 Feature: New User Registeration
-
+#This is just to create new account to be used to run in each time we run the Capstone project
   @RegisteringNewAccount
   Scenario: Register with Tekschool Test Environment Website
     Given I am on Test Environment Home Page

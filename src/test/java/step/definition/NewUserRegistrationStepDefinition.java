@@ -13,7 +13,7 @@ public class NewUserRegistrationStepDefinition extends Base {
 
 	page.objects.NewUserRegistrationPageObj newuserregistration = new page.objects.NewUserRegistrationPageObj();
 
-	
+	// This is just to create new account to be used to run in each time we run the Capstone project
 	@Given("I am on Test Environment Home Page")
 	public void i_am_on_test_environment_home_page() {
 		String expectedText = "TEST ENVIRONMENT";
